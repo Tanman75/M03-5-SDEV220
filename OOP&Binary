@@ -1,0 +1,29 @@
+#problem 1
+#how I would do it on my own
+
+arr = []
+n = int(input("input how many numbers will be in array: "))
+for i in range(0, n):
+    change = int(input("please type 0,1, or 2 then press enter for next number: "))
+    arr.append(change) 
+
+
+arr.sort()
+print(arr)
+
+#Geek for Geek
+    def sort012(self,arr,n):
+        arr.sort()
+        return arr
+
+------------------
+
+#problem 2
+
+class Solution:    
+    def binarysearch(self, arr, n, k):
+        # code here
+        if k not in arr:
+            return -1
+        else:
+            return arr.index(k)
